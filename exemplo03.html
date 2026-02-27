@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+</head>
+<body>
+    <button id="meuBotao" onclick="adicionarTexto()">
+        Adicionar Texto
+    </button>
+    <script>
+        function adicionarTexto(){
+            let texto = document.createTextNode("Este é um novo texto!:)");
+
+            document.body.appendChild(texto);
+        }
+    </script>
+</body>
+</html>

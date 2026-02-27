@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <input type="text" name="meuInput"><br>
+    <button id="meuBotao" onclick="mostrarValor()">Mostrar</button>
+    <p id="resultado"></p>
+    <script>
+        function mostrarValor(){
+            let entrada = document.getElementsByName("meuInput")[0];
+            let resultado = document.getElementById("resultado");
+            
+            resultado.textContent = "Valor digitado no input: " + entrada.value;
+        }
+    </script>
+</body>
+</html>

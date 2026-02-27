@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOm</title>
+</head>
+<body>
+    <p id="meuParagrafo">Este é o meu parágrafo</p>
+    <button id="meuBotao" onclick="mudarTexto()">Clique aqui!</button>
+    <script>
+        function mudarTexto(){
+            // Acessa o elemento pelo id
+            let p = document.getElementById("meuParagrafo");
+
+            // Acessa o conteúdo do id
+            p.textContent = "Novo conteúdo do parágrafo :)!!!!";
+        }
+    </script>
+</body>
+</html>

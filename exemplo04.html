@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p class="minhaClasse">Meu parágrafo</p>
+    <button id="meuBotao" onclick="mudarCor()">Mudar Cor</button>
+
+    <script>
+        let cores = ["red", "green", "yello", "pink", "gray"];
+        let indiceCor = 0;
+
+        function mudarCor(){
+            let p = document.querySelector(".minhaClasse");
+            p.style.color = cores[indiceCor]
+            indiceCor = (indiceCor + 1) % cores.length     ;
+        }
+    </script>
+</body>
+</html>
